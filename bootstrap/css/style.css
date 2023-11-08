@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu',sans-serif;
+}
+.btn{
+    border-radius: 50px;
+}
+/* ********************************************        NAVBAR           ************************************************ */
+.navbar{
+    padding: 25px 0 !important;
+    font-size: 20px;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+}
+.top-nav-collapse{
+    background-color: black;
+    padding: 0.75rem !important;
+}
+/* ********************************************        Landing Page          ************************************************ */
+
+.landing-div{
+    background: white url("../../images/bg-image.jpg") no-repeat scroll center;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+}
+.landing-wrapper{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+
+}
+.landing-wrapper h1{
+    font-size: 80px;
+}
+/* ********************************************       Tour Guide         ************************************************ */
+.tour-guide .display-4{
+    font-size: 3rem;
+}
+.tour-image{
+    border-radius: 10px;
+  
+    box-shadow: 0 15px 15px black;
+}
+/* ********************************************       Tour Destination         ************************************************ */
+
+.dest-card{
+    border-radius: 10px !important;
+    color: white;
+    cursor: pointer;
+
+}
+.dest-card-img{
+    border-radius: 10px !important;
+    position: relative;
+}
+.dest-card-title{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.dest-card-info h4{
+    margin-bottom: 0;
+}
+.dest-card-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: coral;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0 50px 50px 0;
+    width: 45%;
+    text-align: right;
+    transition: all 0.5s ease ;
+}
+.dest-card:hover .dest-card-info{
+    width: 60%;
+    background-color: orangered;
+}
+
+/* ********************************************       Location Section         ************************************************ */
+.location-card{
+    box-shadow: 0 10px 10px black;
+    border-radius: 10px;
+}
+.location-img{
+position: relative;
+}
+.location-price{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0,250,0,0.5);
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+/* ********************************************      Main Footer        ************************************************ */
+
+.main-footer{
+    background: white url("../../images/footer-image.jpg") no-repeat scroll center;
+    background-size: cover;
+
+}
+.footer-wrapper{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    height: 100%;
+}
+
+    
+/* media query */
+@media screen and (max-width: 768px){
+    #activities .col-md-6{
+        margin-bottom: 2%;
+    }
+    #activities .col-md-6 h5{
+        margin-bottom: 2%;
+        font-size: 3rem
+    }
+    #Tour-guide .col-md-6 h5{
+        margin-bottom: 2%;
+        margin-top: 5%;
+        font-size: 2.2rem;
+        text-align: center;
+        
+    }
+    #destination .col-md-3{
+        padding: 2% 8%;
+    }
+    #tour-info .col-md-4{
+        padding: 2% 8%;
+    }
+    .footer-wrapper .col-md-3{
+        padding: 2% 8%;
+    }
+}
+@media screen and (max-width: 320px){
+    .landing-div h1{
+        font-size: 50px;
+    }
+    #Tour-guide .col-md-6 p{
+        text-align: justify;
+    }
+    p{
+        text-align: justify;
+    }
+}
